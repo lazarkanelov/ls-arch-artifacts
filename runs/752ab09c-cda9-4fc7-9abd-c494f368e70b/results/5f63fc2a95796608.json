@@ -1,0 +1,12 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "752ab09c-cda9-4fc7-9abd-c494f368e70b",
+  "status": "ERROR",
+  "started_at": "2026-01-10T17:08:55.461825",
+  "completed_at": "2026-01-10T17:08:55.568511",
+  "duration_seconds": 0.106686,
+  "terraform_apply": null,
+  "pytest_results": null,
+  "container_logs": "",
+  "error_message": "500 Server Error for http+docker://localhost/v1.52/containers/05f90c84256adadf0ab50ff2028ecc1c75e19c6bf2588bc39a599b2a6ecd26ad/start: Internal Server Error (\"ports are not available: exposing port TCP 0.0.0.0:5000 -> 127.0.0.1:0: listen tcp 0.0.0.0:5000: bind: address already in use\")"
+}

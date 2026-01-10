@@ -1,0 +1,12 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "0b2deb88-3047-4282-8dfa-dcd746c59301",
+  "status": "ERROR",
+  "started_at": "2026-01-10T17:08:03.140935",
+  "completed_at": "2026-01-10T17:08:03.757045",
+  "duration_seconds": 0.61611,
+  "terraform_apply": null,
+  "pytest_results": null,
+  "container_logs": "",
+  "error_message": "500 Server Error for http+docker://localhost/v1.52/containers/03487ab9af604065c6962bcab7e554fd674e7f23aec92d4216862476a402f1fc/start: Internal Server Error (\"failed to set up container networking: driver failed programming external connectivity on endpoint lsqm_5f63fc2a_0b2deb88 (b41f0d9d0f8c9a9e198a43d1f75957245aeb63074650c90bb5d21cbe4c9a6408): Bind for 0.0.0.0:4566 failed: port is already allocated\")"
+}

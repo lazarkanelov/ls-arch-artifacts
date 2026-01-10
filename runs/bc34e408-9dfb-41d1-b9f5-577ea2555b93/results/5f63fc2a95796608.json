@@ -1,0 +1,17 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "bc34e408-9dfb-41d1-b9f5-577ea2555b93",
+  "status": "FAILED",
+  "started_at": "2026-01-10T17:13:05.163938",
+  "completed_at": "2026-01-10T17:13:14.925925",
+  "duration_seconds": 9.761993,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[0m\u001b[1mvar.vpc\u001b[0m\n  \u001b[1mEnter a value:\u001b[0m \u001b[0m\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mNo value for required variable\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on variables.tf line 1:\n\u001b[31m\u2502\u001b[0m \u001b[0m   1: \u001b[4mvariable \"vpc\"\u001b[0m {\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThe root module input variable \"vpc\" is not set, and has no default value.\n\u001b[31m\u2502\u001b[0m \u001b[0mUse a -var or -var-file command line argument to provide a value for this\n\u001b[31m\u2502\u001b[0m \u001b[0mvariable.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\nSTDERR: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.9.3.dev56\nLocalStack build date: 2025-12-14\nLocalStack build git hash: 5be1225d8\n\n2026-01-10T17:13:05.757  WARN --- [  MainThread] localstack.deprecations    : DEFAULT_REGION is deprecated (since 0.12.7) and will be removed in upcoming releases of LocalStack! LocalStack now has full multi-region support. This option has no effect. Please remove it from your configuration.\nReady.\n",
+  "error_message": null
+}

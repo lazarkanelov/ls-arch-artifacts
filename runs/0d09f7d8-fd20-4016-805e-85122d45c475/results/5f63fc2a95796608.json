@@ -1,0 +1,17 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "0d09f7d8-fd20-4016-805e-85122d45c475",
+  "status": "FAILED",
+  "started_at": "2026-01-10T17:09:58.110758",
+  "completed_at": "2026-01-10T17:10:00.410152",
+  "duration_seconds": 2.29941,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "[Errno 2] No such file or directory: 'tflocal'"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.9.3.dev56\nLocalStack build date: 2025-12-14\nLocalStack build git hash: 5be1225d8\n\n2026-01-10T17:09:59.786  WARN --- [  MainThread] localstack.deprecations    : DEFAULT_REGION is deprecated (since 0.12.7) and will be removed in upcoming releases of LocalStack! LocalStack now has full multi-region support. This option has no effect. Please remove it from your configuration.\nReady.\n",
+  "error_message": null
+}

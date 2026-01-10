@@ -1,0 +1,17 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "07f581d2-1728-492e-80ce-a36c16ecab56",
+  "status": "FAILED",
+  "started_at": "2026-01-10T17:12:07.146461",
+  "completed_at": "2026-01-10T17:12:18.256163",
+  "duration_seconds": 11.109708,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.9.3.dev56\nLocalStack build date: 2025-12-14\nLocalStack build git hash: 5be1225d8\n\n2026-01-10T17:12:07.774  WARN --- [  MainThread] localstack.deprecations    : DEFAULT_REGION is deprecated (since 0.12.7) and will be removed in upcoming releases of LocalStack! LocalStack now has full multi-region support. This option has no effect. Please remove it from your configuration.\nReady.\n",
+  "error_message": null
+}

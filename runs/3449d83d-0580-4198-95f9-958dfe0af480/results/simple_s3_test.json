@@ -1,0 +1,17 @@
+{
+  "arch_hash": "simple_s3_test",
+  "run_id": "3449d83d-0580-4198-95f9-958dfe0af480",
+  "status": "FAILED",
+  "started_at": "2026-01-10T17:36:26.018063",
+  "completed_at": "2026-01-10T17:37:55.811919",
+  "duration_seconds": 89.793874,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mRetrieving AWS account details: AWS account ID not previously found and failed retrieving via all available methods.\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mSee https://www.terraform.io/docs/providers/aws/index.html#skip_requesting_account_id for workaround and implications.\n\u001b[31m\u2502\u001b[0m \u001b[0mErrors: 3 errors occurred:\n\u001b[31m\u2502\u001b[0m \u001b[0m\t* retrieving account information via iam:GetUser: operation error IAM: GetUser, exceeded maximum number of attempts, 9, https response error StatusCode: 0, RequestID: , request send failed, Post \"http://localhost:4566/\": dial tcp [::1]:4566: connect: connection refused\n\u001b[31m\u2502\u001b[0m \u001b[0m\t* retrieving caller identity from STS: operation error STS: GetCallerIdentity, exceeded maximum number of attempts, 9, https response error StatusCode: 0, RequestID: , request send failed, Post \"http://localhost:4566/\": dial tcp [::1]:4566: connect: connection refused\n\u001b[31m\u2502\u001b[0m \u001b[0m\t* retrieving account information via iam:ListRoles: operation error IAM: ListRoles, exceeded maximum number of attempts, 9, https response error StatusCode: 0, RequestID: , request send failed, Post \"http://localhost:4566/\": dial tcp [::1]:4566: connect: connection refused\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  with provider[\"registry.terraform.io/hashicorp/aws\"],\n\u001b[31m\u2502\u001b[0m \u001b[0m  on main.tf line 11, in provider \"aws\":\n\u001b[31m\u2502\u001b[0m \u001b[0m  11: provider \"aws\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\nSTDERR: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev56\nLocalStack build date: 2026-01-09\nLocalStack build git hash: 0b2a5d188\n\n2026-01-10T17:36:26.649  WARN --- [  MainThread] localstack.deprecations    : DEFAULT_REGION is deprecated (since 0.12.7) and will be removed in upcoming releases of LocalStack! LocalStack now has full multi-region support. This option has no effect. Please remove it from your configuration.\nReady.\n",
+  "error_message": null
+}
