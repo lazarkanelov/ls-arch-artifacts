@@ -1,0 +1,17 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "446c711b-18f2-4ee8-b463-08a7fb56321a",
+  "status": "FAILED",
+  "started_at": "2026-01-10T21:56:14.419664",
+  "completed_at": "2026-01-10T21:56:26.565909",
+  "duration_seconds": 12.146248,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mNo value for required variable\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on variables.tf line 1:\n\u001b[31m\u2502\u001b[0m \u001b[0m   1: \u001b[4mvariable \"vpc\"\u001b[0m {\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThe root module input variable \"vpc\" is not set, and has no default value.\n\u001b[31m\u2502\u001b[0m \u001b[0mUse a -var or -var-file command line argument to provide a value for this\n\u001b[31m\u2502\u001b[0m \u001b[0mvariable.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev56\nLocalStack build date: 2026-01-09\nLocalStack build git hash: 0b2a5d188\n\nReady.\n",
+  "error_message": null
+}
