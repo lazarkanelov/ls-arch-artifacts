@@ -1,0 +1,17 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "30382831-9dc2-4b12-a03a-1826b98c2ab6",
+  "status": "FAILED",
+  "started_at": "2026-01-10T21:31:12.940092",
+  "completed_at": "2026-01-10T21:36:23.324806",
+  "duration_seconds": 310.384717,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Terraform timed out"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev56\nLocalStack build date: 2026-01-09\nLocalStack build git hash: 0b2a5d188\n\nReady.\n",
+  "error_message": null
+}
