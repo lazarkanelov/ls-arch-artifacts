@@ -1,0 +1,20 @@
+{
+  "arch_hash": "62707d3237ff9c70",
+  "arch_name": "aws-samples/serverless-patterns/dynamodb-streams-lambda-terraform",
+  "services": [
+    "iam",
+    "lambda",
+    "dynamodb"
+  ],
+  "generated_at": "2026-01-11T08:28:53.319611",
+  "generator_version": "1.0.0",
+  "model_used": "claude-sonnet-4-20250514",
+  "input_tokens": 2094,
+  "output_tokens": 9216,
+  "files_generated": [
+    "conftest.py",
+    "app.py",
+    "test_app.py",
+    "requirements.txt"
+  ]
+}

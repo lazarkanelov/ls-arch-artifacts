@@ -1,0 +1,23 @@
+{
+  "arch_hash": "ad03f95fc72b1791",
+  "arch_name": "aws-samples/serverless-patterns/apigw-lambda-dynamodb-terraform",
+  "services": [
+    "dynamodb",
+    "cloudwatch",
+    "lambda",
+    "apigateway",
+    "iam",
+    "s3"
+  ],
+  "generated_at": "2026-01-11T08:22:36.708383",
+  "generator_version": "1.0.0",
+  "model_used": "claude-sonnet-4-20250514",
+  "input_tokens": 3336,
+  "output_tokens": 7607,
+  "files_generated": [
+    "conftest.py",
+    "app.py",
+    "test_app.py",
+    "requirements.txt"
+  ]
+}
