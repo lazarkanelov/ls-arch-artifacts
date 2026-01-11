@@ -1,0 +1,20 @@
+{
+  "arch_hash": "ced9dfcb174c6a53",
+  "arch_name": "aws-samples/serverless-patterns/s3-lambda-terraform",
+  "services": [
+    "iam",
+    "lambda",
+    "s3"
+  ],
+  "generated_at": "2026-01-11T11:53:16.676419",
+  "generator_version": "1.0.0",
+  "model_used": "claude-sonnet-4-20250514",
+  "input_tokens": 1888,
+  "output_tokens": 7328,
+  "files_generated": [
+    "conftest.py",
+    "app.py",
+    "test_app.py",
+    "requirements.txt"
+  ]
+}
