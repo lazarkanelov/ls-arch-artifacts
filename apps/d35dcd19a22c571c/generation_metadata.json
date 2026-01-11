@@ -1,0 +1,27 @@
+{
+  "arch_hash": "d35dcd19a22c571c",
+  "arch_name": "aws-waf-automation-terraform-samples",
+  "services": [
+    "sns",
+    "apigateway",
+    "cloudwatch",
+    "dynamodb",
+    "cloudformation",
+    "firehose",
+    "lambda",
+    "kms",
+    "s3",
+    "iam"
+  ],
+  "generated_at": "2026-01-11T21:40:23.276312",
+  "generator_version": "1.0.0",
+  "model_used": "claude-sonnet-4-20250514",
+  "input_tokens": 6305,
+  "output_tokens": 12617,
+  "files_generated": [
+    "conftest.py",
+    "app.py",
+    "test_app.py",
+    "requirements.txt"
+  ]
+}

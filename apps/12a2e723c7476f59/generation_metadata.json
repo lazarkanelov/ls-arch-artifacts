@@ -1,0 +1,19 @@
+{
+  "arch_hash": "12a2e723c7476f59",
+  "arch_name": "justtrackio/sqs",
+  "services": [
+    "sns",
+    "cloudwatch"
+  ],
+  "generated_at": "2026-01-11T21:38:01.498004",
+  "generator_version": "1.0.0",
+  "model_used": "claude-sonnet-4-20250514",
+  "input_tokens": 5347,
+  "output_tokens": 10013,
+  "files_generated": [
+    "conftest.py",
+    "app.py",
+    "test_app.py",
+    "requirements.txt"
+  ]
+}
