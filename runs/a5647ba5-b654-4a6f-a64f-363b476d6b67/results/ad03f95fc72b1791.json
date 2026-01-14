@@ -1,0 +1,17 @@
+{
+  "arch_hash": "ad03f95fc72b1791",
+  "run_id": "a5647ba5-b654-4a6f-a64f-363b476d6b67",
+  "status": "FAILED",
+  "started_at": "2026-01-14T15:14:02.331866",
+  "completed_at": "2026-01-14T15:14:19.200901",
+  "duration_seconds": 16.869037,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[0m\u001b[1mdata.archive_file.lambda_zip: Reading...\u001b[0m\u001b[0m\n\nTerraform used the selected providers to generate the following execution\nplan. Resource actions are indicated with the following symbols:\n  \u001b[32m+\u001b[0m create\u001b[0m\n\nTerraform planned the following actions, but then encountered a problem:\n\n\u001b[1m  # random_string.random\u001b[0m will be created\n\u001b[0m  \u001b[32m+\u001b[0m\u001b[0m resource \"random_string\" \"random\" {\n      \u001b[32m+\u001b[0m\u001b[0m id          = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m length      = 4\n      \u001b[32m+\u001b[0m\u001b[0m lower       = true\n      \u001b[32m+\u001b[0m\u001b[0m min_lower   = 0\n      \u001b[32m+\u001b[0m\u001b[0m min_numeric = 0\n      \u001b[32m+\u001b[0m\u001b[0m min_special = 0\n      \u001b[32m+\u001b[0m\u001b[0m min_upper   = 0\n      \u001b[32m+\u001b[0m\u001b[0m number      = true\n      \u001b[32m+\u001b[0m\u001b[0m result      = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m special     = false\n      \u001b[32m+\u001b[0m\u001b[0m upper       = true\n    }\n\n\u001b[1mPlan:\u001b[0m 1 to add, 0 to change, 0 to destroy.\n\u001b[0m\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mloading configuration: failed to get shared config profile, default\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  with provider[\"registry.terraform.io/hashicorp/aws\"],\n\u001b[31m\u2502\u001b[0m \u001b[0m  on main.tf line 20, in provider \"aws\":\n\u001b[31m\u2502\u001b[0m \u001b[0m  20: provider \"aws\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1merror archiving directory: could not archive missing directory: ./src\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  with data.archive_file.lambda_zip,\n\u001b[31m\u2502\u001b[0m \u001b[0m  on main.tf line 68, in data \"archive_file\" \"lambda_zip\":\n\u001b[31m\u2502\u001b[0m \u001b[0m  68: data \"archive_file\" \"lambda_zip\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2575\u001b[0m\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev65\nLocalStack build date: 2026-01-14\nLocalStack build git hash: 7517af48d\n\nReady.\n",
+  "error_message": null
+}

@@ -1,0 +1,17 @@
+{
+  "arch_hash": "5ce7234a153efd12",
+  "run_id": "a5647ba5-b654-4a6f-a64f-363b476d6b67",
+  "status": "FAILED",
+  "started_at": "2026-01-14T15:15:27.885999",
+  "completed_at": "2026-01-14T15:15:37.761676",
+  "duration_seconds": 9.875679,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mNo value for required variable\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on variables.tf line 1:\n\u001b[31m\u2502\u001b[0m \u001b[0m   1: \u001b[4mvariable name\u001b[0m {\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThe root module input variable \"name\" is not set, and has no default value.\n\u001b[31m\u2502\u001b[0m \u001b[0mUse a -var or -var-file command line argument to provide a value for this\n\u001b[31m\u2502\u001b[0m \u001b[0mvariable.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mNo value for required variable\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on variables.tf line 5:\n\u001b[31m\u2502\u001b[0m \u001b[0m   5: \u001b[4mvariable description\u001b[0m {\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThe root module input variable \"description\" is not set, and has no default\n\u001b[31m\u2502\u001b[0m \u001b[0mvalue. Use a -var or -var-file command line argument to provide a value for\n\u001b[31m\u2502\u001b[0m \u001b[0mthis variable.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mNo value for required variable\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on variables.tf line 9:\n\u001b[31m\u2502\u001b[0m \u001b[0m   9: \u001b[4mvariable s3_artifact_bucket\u001b[0m {\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThe root module input variable \"s3_artifact_bucket\" is not set, and has no\n\u001b[31m\u2502\u001b[0m \u001b[0mdefault value. Use a -var or -var-file command line argument to provide a\n\u001b[31m\u2502\u001b[0m \u001b[0mvalue for this variable.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mNo value for required variable\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on variables.tf line 19:\n\u001b[31m\u2502\u001b[0m \u001b[0m  19: \u001b[4mvariable lambda_code_source_dir\u001b[0m {\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThe root module input variable \"lambda_code_source_dir\" is not set, and has\n\u001b[31m\u2502\u001b[0m \u001b[0mno default value. Use a -var or -var-file command line argument to provide\n\u001b[31m\u2502\u001b[0m \u001b[0ma value for this variable.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev65\nLocalStack build date: 2026-01-14\nLocalStack build git hash: 7517af48d\n\nReady.\n",
+  "error_message": null
+}
