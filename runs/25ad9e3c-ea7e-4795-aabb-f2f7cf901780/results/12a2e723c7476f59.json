@@ -1,0 +1,17 @@
+{
+  "arch_hash": "12a2e723c7476f59",
+  "run_id": "25ad9e3c-ea7e-4795-aabb-f2f7cf901780",
+  "status": "FAILED",
+  "started_at": "2026-01-14T15:30:04.842525",
+  "completed_at": "2026-01-14T15:30:08.543535",
+  "duration_seconds": 3.701013,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Init failed:\nSTDOUT: \n\u001b[0m\u001b[1mInitializing the backend...\u001b[0m\n\u001b[0m\u001b[1mInitializing modules...\u001b[0m\nDownloading registry.terraform.io/justtrackio/label/null 0.26.0 for this...\n- this in .terraform/modules/this\n\u001b[31m\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mUnresolvable module version constraint\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 28:\n\u001b[31m\u2502\u001b[0m \u001b[0m  28: \u001b[4mmodule \"sqs\"\u001b[0m {\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThere is no available version of module\n\u001b[31m\u2502\u001b[0m \u001b[0m\"registry.terraform.io/terraform-aws-modules/sqs/aws\" (main.tf:28) which\n\u001b[31m\u2502\u001b[0m \u001b[0mmatches the given version constraint. The newest available version is\n\u001b[31m\u2502\u001b[0m \u001b[0m5.2.0.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[0m\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev65\nLocalStack build date: 2026-01-14\nLocalStack build git hash: 7517af48d\n\nReady.\n",
+  "error_message": null
+}
