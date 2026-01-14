@@ -1,0 +1,17 @@
+{
+  "arch_hash": "331b83bdbfe63d75",
+  "run_id": "f8216ce8-78e2-46e0-b65f-13fa97f5a973",
+  "status": "FAILED",
+  "started_at": "2026-01-14T15:46:19.131743",
+  "completed_at": "2026-01-14T15:46:33.096943",
+  "duration_seconds": 13.965203,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[0m\u001b[1mdata.archive_file.lambda_zip: Reading...\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mloading configuration: failed to get shared config profile, default\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  with provider[\"registry.terraform.io/hashicorp/aws\"],\n\u001b[31m\u2502\u001b[0m \u001b[0m  on main.tf line 20, in provider \"aws\":\n\u001b[31m\u2502\u001b[0m \u001b[0m  20: provider \"aws\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1merror archiving directory: could not archive missing directory: ./src\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  with data.archive_file.lambda_zip,\n\u001b[31m\u2502\u001b[0m \u001b[0m  on main.tf line 36, in data \"archive_file\" \"lambda_zip\":\n\u001b[31m\u2502\u001b[0m \u001b[0m  36: data \"archive_file\" \"lambda_zip\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2575\u001b[0m\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: "
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev65\nLocalStack build date: 2026-01-14\nLocalStack build git hash: 7517af48d\n\nReady.\n",
+  "error_message": null
+}
