@@ -1,0 +1,15 @@
+{
+  "arch_hash": "12a2e723c7476f59",
+  "run_id": "1a93dbe4-0e3f-468c-8b88-699207d31ba3",
+  "status": "ERROR",
+  "started_at": "2026-01-15T12:23:47.284498",
+  "completed_at": "2026-01-15T12:23:50.938613",
+  "duration_seconds": 3.654115,
+  "terraform_apply": null,
+  "pytest_results": null,
+  "container_logs": "",
+  "error_message": "expected string or bytes-like object, got 'PosixPath'",
+  "preprocessing_delta": null,
+  "resource_inventory": null,
+  "test_quality": null
+}
