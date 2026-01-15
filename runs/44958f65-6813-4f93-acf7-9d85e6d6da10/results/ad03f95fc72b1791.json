@@ -1,0 +1,77 @@
+{
+  "arch_hash": "ad03f95fc72b1791",
+  "run_id": "44958f65-6813-4f93-acf7-9d85e6d6da10",
+  "status": "FAILED",
+  "started_at": "2026-01-15T13:20:15.730714",
+  "completed_at": "2026-01-15T13:25:22.933857",
+  "duration_seconds": 307.203146,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Terraform timed out"
+  },
+  "pytest_results": null,
+  "container_logs": "15T13:20:34.018  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.CreateRole => 200\n2026-01-15T13:20:34.022  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetPolicy => 200\n2026-01-15T13:20:34.023  INFO --- [et.reactor-3] localstack.request.aws     : AWS logs.CreateLogGroup => 200\n2026-01-15T13:20:34.028  INFO --- [et.reactor-2] localstack.request.aws     : AWS logs.CreateLogGroup => 200\n2026-01-15T13:20:34.032  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.GetRole => 200\n2026-01-15T13:20:34.037  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetPolicyVersion => 200\n2026-01-15T13:20:34.039  INFO --- [et.reactor-4] localstack.request.aws     : AWS logs.PutRetentionPolicy => 200\n2026-01-15T13:20:34.043  INFO --- [et.reactor-3] localstack.request.aws     : AWS logs.PutRetentionPolicy => 200\n2026-01-15T13:20:34.052  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.ListRolePolicies => 200\n2026-01-15T13:20:34.055  INFO --- [et.reactor-4] localstack.request.aws     : AWS logs.DescribeLogGroups => 200\n2026-01-15T13:20:34.059  INFO --- [et.reactor-3] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200\n2026-01-15T13:20:34.060  INFO --- [et.reactor-1] localstack.request.aws     : AWS logs.DescribeLogGroups => 200\n2026-01-15T13:20:34.115  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.AttachRolePolicy => 200\n2026-01-15T13:20:34.134  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200\n2026-01-15T13:20:34.190  INFO --- [et.reactor-3] localstack.request.aws     : AWS logs.ListTagsForResource => 200\n2026-01-15T13:20:34.190  INFO --- [et.reactor-2] localstack.request.aws     : AWS logs.ListTagsForResource => 200\n2026-01-15T13:20:34.483 ERROR --- [et.reactor-4] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:20:34.483  INFO --- [et.reactor-4] localstack.request.http    : HEAD / => 500\n2026-01-15T13:20:34.485  INFO --- [et.reactor-5] localstack.request.aws     : AWS dynamodb.CreateTable => 200\n2026-01-15T13:20:34.499  INFO --- [et.reactor-3] localstack.request.aws     : AWS dynamodb.DescribeTable => 200\n2026-01-15T13:20:35.301 ERROR --- [et.reactor-2] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:20:35.301  INFO --- [et.reactor-2] localstack.request.http    : HEAD / => 500\n2026-01-15T13:20:35.511  INFO --- [et.reactor-5] localstack.request.aws     : AWS dynamodb.DescribeTable => 200\n2026-01-15T13:20:35.523  INFO --- [et.reactor-0] localstack.request.aws     : AWS dynamodb.DescribeTable => 200\n2026-01-15T13:20:35.532  INFO --- [et.reactor-1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200\n2026-01-15T13:20:35.536  INFO --- [et.reactor-4] localstack.request.aws     : AWS dynamodb.DescribeContinuousBackups => 200\n2026-01-15T13:20:35.546  INFO --- [et.reactor-3] localstack.request.aws     : AWS dynamodb.DescribeTimeToLive => 200\n2026-01-15T13:20:35.549  INFO --- [et.reactor-5] localstack.request.aws     : AWS dynamodb.ListTagsOfResource => 200\n2026-01-15T13:20:36.537 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:20:36.537  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-15T13:20:39.663 ERROR --- [et.reactor-1] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:20:39.664  INFO --- [et.reactor-1] localstack.request.http    : HEAD / => 500\n2026-01-15T13:20:47.011 ERROR --- [et.reactor-3] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:20:47.011  INFO --- [et.reactor-3] localstack.request.http    : HEAD / => 500\n2026-01-15T13:20:55.441 ERROR --- [et.reactor-5] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:20:55.442  INFO --- [et.reactor-5] localstack.request.http    : HEAD / => 500\n2026-01-15T13:21:18.491 ERROR --- [et.reactor-4] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:21:18.492  INFO --- [et.reactor-4] localstack.request.http    : HEAD / => 500\n2026-01-15T13:22:11.326 ERROR --- [et.reactor-4] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:22:11.326  INFO --- [et.reactor-4] localstack.request.http    : HEAD / => 500\n2026-01-15T13:23:30.791 ERROR --- [et.reactor-5] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-15T13:23:30.791  INFO --- [et.reactor-5] localstack.request.http    : HEAD / => 500\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [
+        "src/index.js"
+      ],
+      "lambdas": [
+        "apigw_lambda_ddb"
+      ],
+      "stub_types": {
+        "src/index.js": "js"
+      },
+      "directories": [
+        "src"
+      ],
+      "has_stubs": true,
+      "stub_count": 1
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "apigateway",
+        "cloudwatch",
+        "dynamodb",
+        "iam",
+        "lambda",
+        "s3"
+      ],
+      "final_services": [
+        "apigateway",
+        "cloudwatch",
+        "dynamodb",
+        "iam",
+        "lambda",
+        "s3"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "main.tf"
+    ],
+    "generated_tfvars": {},
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 1,
+      "files_modified": 1,
+      "tfvars_generated": 0,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}
