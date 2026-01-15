@@ -1,0 +1,78 @@
+{
+  "arch_hash": "5ce7234a153efd12",
+  "run_id": "e11c3af3-e8c9-4830-b95f-8d876dad55e9",
+  "status": "FAILED",
+  "started_at": "2026-01-15T15:16:33.865087",
+  "completed_at": "2026-01-15T15:16:37.156558",
+  "duration_seconds": 3.291473,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Init failed:\nSTDOUT: \n\u001b[0m\u001b[1mInitializing the backend...\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: \u001b[31m\u001b[0mTerraform encountered problems during initialisation, including problems\nwith the configuration, described below.\n\nThe Terraform configuration must be valid before initialization so that\nTerraform can determine which modules and providers need to be installed.\u001b[0m\u001b[0m\n\u001b[31m\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mExtra characters after interpolation expression\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 12, in data \"archive_file\" \"zip_file_for_lambda\":\n\u001b[31m\u2502\u001b[0m \u001b[0m  11:   output_path = \"${var.local_file_dir\n\u001b[31m\u2502\u001b[0m \u001b[0m  12:   \u001b[4msource_file\u001b[0m = \"${path.module}/lambda_stubs/zip_file_for_lambda.js\"\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mExpected a closing brace to end the interpolation expression, but found\n\u001b[31m\u2502\u001b[0m \u001b[0mextra characters.\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThis can happen when you include interpolation syntax for another language,\n\u001b[31m\u2502\u001b[0m \u001b[0msuch as shell scripting, but forget to escape the interpolation start\n\u001b[31m\u2502\u001b[0m \u001b[0mtoken. If this is an embedded sequence for another language, escape it by\n\u001b[31m\u2502\u001b[0m \u001b[0mstarting with \"$${\" instead of just \"${\".\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[0m\u001b[0m\n"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev68\nLocalStack build date: 2026-01-15\nLocalStack build git hash: ccc4a3ec8\n\n2026-01-15T15:16:36.027  WARN --- [  MainThread] localstack.deprecations    : LAMBDA_EXECUTOR is deprecated (since 2.0.0) and will be removed in upcoming releases of LocalStack! This configuration is obsolete with the new lambda provider https://docs.localstack.cloud/user-guide/aws/lambda/#migrating-to-lambda-v2\nPlease mount the Docker socket /var/run/docker.sock as a volume when starting LocalStack.\nReady.\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [
+        "lambda_stubs/zip_file_for_lambda.js"
+      ],
+      "lambdas": [
+        "lambda"
+      ],
+      "stub_types": {
+        "lambda_stubs/zip_file_for_lambda.js": "js"
+      },
+      "directories": [],
+      "has_stubs": true,
+      "stub_count": 1
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "cloudwatch",
+        "iam",
+        "lambda",
+        "s3",
+        "ssm"
+      ],
+      "final_services": [
+        "cloudwatch",
+        "iam",
+        "lambda",
+        "s3",
+        "ssm"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "main.tf"
+    ],
+    "generated_tfvars": {
+      "name": "\"lsqm-test\"",
+      "description": "\"LSQM test resource\"",
+      "s3_artifact_bucket": "\"lsqm-test-bucket\"",
+      "lambda_code_source_dir": "\".\""
+    },
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 1,
+      "files_modified": 1,
+      "tfvars_generated": 4,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "e11c3af3-e8c9-4830-b95f-8d876dad55e9",
+  "started_at": "2026-01-15T15:20:08.613557",
+  "localstack_version": "latest",
+  "summary": {
+    "total": 10,
+    "passed": 2,
+    "partial": 0,
+    "failed": 8,
+    "timeout": 0,
+    "error": 0
+  }
+}
