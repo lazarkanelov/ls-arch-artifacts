@@ -1,0 +1,69 @@
+{
+  "arch_hash": "ced9dfcb174c6a53",
+  "run_id": "b84a682f-1306-4bc2-a506-c22eb2f7d48b",
+  "status": "FAILED",
+  "started_at": "2026-01-15T12:37:02.862317",
+  "completed_at": "2026-01-15T12:37:10.640650",
+  "duration_seconds": 7.778335,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[0m\u001b[1mdata.archive_file.lambda_zip_file: Reading...\u001b[0m\u001b[0m\n\u001b[0m\u001b[1mdata.archive_file.lambda_zip_file: Read complete after 0s [id=b6014d37ac447a0689cef34ed47f740e57ba0381]\u001b[0m\n\nTerraform used the selected providers to generate the following execution\nplan. Resource actions are indicated with the following symbols:\n  \u001b[32m+\u001b[0m create\u001b[0m\n\nTerraform planned the following actions, but then encountered a problem:\n\n\u001b[1m  # random_string.random\u001b[0m will be created\n\u001b[0m  \u001b[32m+\u001b[0m\u001b[0m resource \"random_string\" \"random\" {\n      \u001b[32m+\u001b[0m\u001b[0m id          = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m length      = 8\n      \u001b[32m+\u001b[0m\u001b[0m lower       = true\n      \u001b[32m+\u001b[0m\u001b[0m min_lower   = 0\n      \u001b[32m+\u001b[0m\u001b[0m min_numeric = 0\n      \u001b[32m+\u001b[0m\u001b[0m min_special = 0\n      \u001b[32m+\u001b[0m\u001b[0m min_upper   = 0\n      \u001b[32m+\u001b[0m\u001b[0m number      = true\n      \u001b[32m+\u001b[0m\u001b[0m result      = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m special     = false\n      \u001b[32m+\u001b[0m\u001b[0m upper       = false\n    }\n\n\u001b[1mPlan:\u001b[0m 1 to add, 0 to change, 0 to destroy.\n\u001b[0m::error::Terraform exited with code 1.\n\nSTDERR: \u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mUnsupported argument\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on localstack_providers_override.tf line 44, in provider \"aws\":\n\u001b[31m\u2502\u001b[0m \u001b[0m  44:     \u001b[4mopensearchservice\u001b[0m = \"http://localhost:5130\"\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mAn argument named \"opensearchservice\" is not expected here.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev68\nLocalStack build date: 2026-01-15\nLocalStack build git hash: ccc4a3ec8\n\n2026-01-15T12:37:03.886  WARN --- [  MainThread] localstack.deprecations    : LAMBDA_EXECUTOR is deprecated (since 2.0.0) and will be removed in upcoming releases of LocalStack! This configuration is obsolete with the new lambda provider https://docs.localstack.cloud/user-guide/aws/lambda/#migrating-to-lambda-v2\nPlease mount the Docker socket /var/run/docker.sock as a volume when starting LocalStack.\nReady.\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [
+        "src/index.js"
+      ],
+      "lambdas": [
+        "lambda_s3_handler"
+      ],
+      "stub_types": {
+        "src/index.js": "js"
+      },
+      "directories": [],
+      "has_stubs": true,
+      "stub_count": 1
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "iam",
+        "lambda",
+        "s3"
+      ],
+      "final_services": [
+        "iam",
+        "lambda",
+        "s3"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "main.tf"
+    ],
+    "generated_tfvars": {},
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 1,
+      "files_modified": 1,
+      "tfvars_generated": 0,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}

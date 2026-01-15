@@ -1,0 +1,84 @@
+{
+  "arch_hash": "d35dcd19a22c571c",
+  "run_id": "b84a682f-1306-4bc2-a506-c22eb2f7d48b",
+  "status": "FAILED",
+  "started_at": "2026-01-15T12:43:16.949305",
+  "completed_at": "2026-01-15T12:43:24.080166",
+  "duration_seconds": 7.130864,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[33m\u2577\u001b[0m\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[33mWarning: \u001b[0m\u001b[0m\u001b[1mArgument is deprecated\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\u001b[0m  with aws_s3_bucket.WafLogBucket,\n\u001b[33m\u2502\u001b[0m \u001b[0m  on main.tf line 141, in resource \"aws_s3_bucket\" \"WafLogBucket\":\n\u001b[33m\u2502\u001b[0m \u001b[0m 141: resource \"aws_s3_bucket\" \"WafLogBucket\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0mUse the aws_s3_bucket_server_side_encryption_configuration resource instead\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m(and 6 more similar warnings elsewhere)\n\u001b[33m\u2575\u001b[0m\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: \u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mReference to undeclared resource\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 3282, in locals:\n\u001b[31m\u2502\u001b[0m \u001b[0m3282:   GlueAccessLogsDatabase        = length(\u001b[4maws_glue_catalog_database.mydatabase\u001b[0m) != 0 ? \"${aws_glue_catalog_database.mydatabase[0].name}\" : \"0\"\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mA managed resource \"aws_glue_catalog_database\" \"mydatabase\" has not been\n\u001b[31m\u2502\u001b[0m \u001b[0mdeclared in the root module.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mReference to undeclared resource\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 3282, in locals:\n\u001b[31m\u2502\u001b[0m \u001b[0m3282:   GlueAccessLogsDatabase        = length(aws_glue_catalog_database.mydatabase) != 0 ? \"${\u001b[4maws_glue_catalog_database.mydatabase[0]\u001b[0m.name}\" : \"0\"\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mA managed resource \"aws_glue_catalog_database\" \"mydatabase\" has not been\n\u001b[31m\u2502\u001b[0m \u001b[0mdeclared in the root module.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mReference to undeclared resource\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 4138, in resource \"aws_glue_catalog_table\" \"waf_access_logs_table\":\n\u001b[31m\u2502\u001b[0m \u001b[0m4138:   database_name = \u001b[4maws_glue_catalog_database.mydatabase[0]\u001b[0m.name\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mA managed resource \"aws_glue_catalog_database\" \"mydatabase\" has not been\n\u001b[31m\u2502\u001b[0m \u001b[0mdeclared in the root module.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mReference to undeclared resource\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 4188, in resource \"aws_glue_catalog_table\" \"ALBGlueAppAccessLogsTable\":\n\u001b[31m\u2502\u001b[0m \u001b[0m4188:   database_name = \u001b[4maws_glue_catalog_database.mydatabase[0]\u001b[0m.name\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mA managed resource \"aws_glue_catalog_database\" \"mydatabase\" has not been\n\u001b[31m\u2502\u001b[0m \u001b[0mdeclared in the root module.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mReference to undeclared resource\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 4237, in resource \"aws_glue_catalog_table\" \"cloudfrontGlueAppAccessLogsTable\":\n\u001b[31m\u2502\u001b[0m \u001b[0m4237:   database_name = \u001b[4maws_glue_catalog_database.mydatabase[0]\u001b[0m.name\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mA managed resource \"aws_glue_catalog_database\" \"mydatabase\" has not been\n\u001b[31m\u2502\u001b[0m \u001b[0mdeclared in the root module.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev68\nLocalStack build date: 2026-01-15\nLocalStack build git hash: ccc4a3ec8\n\n2026-01-15T12:43:18.032  WARN --- [  MainThread] localstack.deprecations    : LAMBDA_EXECUTOR is deprecated (since 2.0.0) and will be removed in upcoming releases of LocalStack! This configuration is obsolete with the new lambda provider https://docs.localstack.cloud/user-guide/aws/lambda/#migrating-to-lambda-v2\nPlease mount the Docker socket /var/run/docker.sock as a volume when starting LocalStack.\nReady.\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [
+      {
+        "resource_type": "aws_glue_catalog_database",
+        "resource_name": "mydatabase",
+        "reason": "pro_only",
+        "file_path": "main.tf"
+      }
+    ],
+    "stub_info": {
+      "files": [],
+      "lambdas": [],
+      "stub_types": {},
+      "directories": [],
+      "has_stubs": false,
+      "stub_count": 0
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "apigateway",
+        "cloudformation",
+        "cloudwatch",
+        "dynamodb",
+        "firehose",
+        "iam",
+        "kms",
+        "lambda",
+        "s3",
+        "sns"
+      ],
+      "final_services": [
+        "apigateway",
+        "cloudformation",
+        "cloudwatch",
+        "dynamodb",
+        "firehose",
+        "iam",
+        "kms",
+        "lambda",
+        "s3",
+        "sns"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "main.tf"
+    ],
+    "generated_tfvars": {},
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 1,
+      "stubs_created": 0,
+      "files_modified": 1,
+      "tfvars_generated": 0,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}
