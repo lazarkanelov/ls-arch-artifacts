@@ -1,0 +1,69 @@
+{
+  "arch_hash": "ced9dfcb174c6a53",
+  "run_id": "940442f2-f225-4089-8393-1e92fda20767",
+  "status": "FAILED",
+  "started_at": "2026-01-15T19:39:08.582576",
+  "completed_at": "2026-01-15T19:44:13.510518",
+  "duration_seconds": 304.927945,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Terraform timed out"
+  },
+  "pytest_results": null,
+  "container_logs": "n during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:15.722  INFO --- [et.reactor-1] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:15.795 ERROR --- [et.reactor-1] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:15.795  INFO --- [et.reactor-1] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:15.855  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.CreateRole => 200\n2026-01-15T19:39:15.859  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.PutRolePolicy => 200\n2026-01-15T19:39:15.863  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetRole => 200\n2026-01-15T19:39:15.866 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:15.867  INFO --- [et.reactor-0] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:16.082 ERROR --- [et.reactor-1] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:16.082  INFO --- [et.reactor-1] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:16.269  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.ListRolePolicies => 200\n2026-01-15T19:39:16.272  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetRolePolicy => 200\n2026-01-15T19:39:16.275  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200\n2026-01-15T19:39:16.431 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:16.432  INFO --- [et.reactor-0] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:16.838  INFO --- [et.reactor-1] localstack.request.aws     : AWS lambda.CreateFunction => 201\n2026-01-15T19:39:17.299 ERROR --- [et.reactor-1] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:17.299  INFO --- [et.reactor-1] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:18.451 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:18.451  INFO --- [et.reactor-0] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:21.991  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetFunction => 200\n2026-01-15T19:39:22.178 ERROR --- [et.reactor-1] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:22.179  INFO --- [et.reactor-1] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:22.204  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetFunction => 200\n2026-01-15T19:39:22.644  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetFunction => 200\n2026-01-15T19:39:23.458  INFO --- [et.reactor-1] localstack.request.aws     : AWS lambda.GetFunction => 200\n2026-01-15T19:39:25.072  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetFunction => 200\n2026-01-15T19:39:26.317 ERROR --- [et.reactor-1] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:26.318  INFO --- [et.reactor-1] localstack.request.http    : PUT / => 500\n2026-01-15T19:39:28.284  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetFunction => 200\n2026-01-15T19:39:28.294  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetFunction => 200\n2026-01-15T19:39:28.296  INFO --- [et.reactor-1] localstack.request.aws     : AWS lambda.ListVersionsByFunction => 200\n2026-01-15T19:39:28.298  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetFunctionCodeSigningConfig => 200\n2026-01-15T19:39:34.482 ERROR --- [et.reactor-2] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:39:34.482  INFO --- [et.reactor-2] localstack.request.http    : PUT / => 500\n2026-01-15T19:40:02.393 ERROR --- [et.reactor-1] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:40:02.393  INFO --- [et.reactor-1] localstack.request.http    : PUT / => 500\n2026-01-15T19:41:02.094 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:41:02.095  INFO --- [et.reactor-0] localstack.request.http    : PUT / => 500\n2026-01-15T19:42:28.722 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: PUT /\n2026-01-15T19:42:28.723  INFO --- [et.reactor-0] localstack.request.http    : PUT / => 500\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [
+        "src/index.js"
+      ],
+      "lambdas": [
+        "lambda_s3_handler"
+      ],
+      "stub_types": {
+        "src/index.js": "js"
+      },
+      "directories": [],
+      "has_stubs": true,
+      "stub_count": 1
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "iam",
+        "lambda",
+        "s3"
+      ],
+      "final_services": [
+        "iam",
+        "lambda",
+        "s3"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "main.tf"
+    ],
+    "generated_tfvars": {},
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 1,
+      "files_modified": 1,
+      "tfvars_generated": 0,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}

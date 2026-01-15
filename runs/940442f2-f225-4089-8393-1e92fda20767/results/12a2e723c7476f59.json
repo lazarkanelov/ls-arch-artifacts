@@ -1,0 +1,67 @@
+{
+  "arch_hash": "12a2e723c7476f59",
+  "run_id": "940442f2-f225-4089-8393-1e92fda20767",
+  "status": "FAILED",
+  "started_at": "2026-01-15T19:46:06.921002",
+  "completed_at": "2026-01-15T19:46:21.933146",
+  "duration_seconds": 15.012146,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[0m\u001b[1mmodule.sqs.data.aws_region.current[0]: Reading...\u001b[0m\u001b[0m\n\u001b[0m\u001b[1mmodule.sqs.data.aws_caller_identity.current[0]: Reading...\u001b[0m\u001b[0m\n\u001b[0m\u001b[1mmodule.sqs.data.aws_partition.current[0]: Reading...\u001b[0m\u001b[0m\n\u001b[0m\u001b[1mmodule.sqs.data.aws_partition.current[0]: Read complete after 0s [id=aws]\u001b[0m\n\u001b[0m\u001b[1mmodule.sqs.data.aws_region.current[0]: Read complete after 0s [id=us-east-1]\u001b[0m\n\u001b[0m\u001b[1mmodule.sqs.data.aws_caller_identity.current[0]: Read complete after 1s [id=000000000000]\u001b[0m\n\n\u001b[0m\u001b[1m\u001b[31mPlanning failed.\u001b[0m\u001b[1m Terraform encountered an error while generating this plan.\u001b[0m\n\n\u001b[0m::error::Terraform exited with code 1.\n\nSTDERR: \u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mUnsupported attribute\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on .terraform/modules/this/main.tf line 70, in locals:\n\u001b[31m\u2502\u001b[0m \u001b[0m  70:     aws_account_id      = var.aws_account_id == null ? var.context\u001b[4m.aws_account_id\u001b[0m : var.aws_account_id\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m    \u001b[90m\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m    \u001b[90m\u2502\u001b[0m \u001b[1mvar.context\u001b[0m is object with 17 attributes\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThis object does not have an attribute named \"aws_account_id\".\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mUnsupported attribute\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on .terraform/modules/this/main.tf line 71, in locals:\n\u001b[31m\u2502\u001b[0m \u001b[0m  71:     aws_region          = var.aws_region == null ? var.context\u001b[4m.aws_region\u001b[0m : var.aws_region\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m    \u001b[90m\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m    \u001b[90m\u2502\u001b[0m \u001b[1mvar.context\u001b[0m is object with 17 attributes\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThis object does not have an attribute named \"aws_region\".\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mUnsupported attribute\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on .terraform/modules/this/main.tf line 72, in locals:\n\u001b[31m\u2502\u001b[0m \u001b[0m  72:     organizational_unit = var.organizational_unit == null ? var.context\u001b[4m.organizational_unit\u001b[0m : var.organizational_unit\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m    \u001b[90m\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m    \u001b[90m\u2502\u001b[0m \u001b[1mvar.context\u001b[0m is object with 17 attributes\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mThis object does not have an attribute named \"organizational_unit\".\n\u001b[31m\u2575\u001b[0m\u001b[0m\n"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev69\nLocalStack build date: 2026-01-15\nLocalStack build git hash: 227f0705e\n\n2026-01-15T19:46:08.981  WARN --- [  MainThread] localstack.deprecations    : LAMBDA_EXECUTOR is deprecated (since 2.0.0) and will be removed in upcoming releases of LocalStack! This configuration is obsolete with the new lambda provider https://docs.localstack.cloud/user-guide/aws/lambda/#migrating-to-lambda-v2\nPlease mount the Docker socket /var/run/docker.sock as a volume when starting LocalStack.\nReady.\n2026-01-15T19:46:21.772  INFO --- [et.reactor-0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [],
+      "lambdas": [],
+      "stub_types": {},
+      "directories": [],
+      "has_stubs": false,
+      "stub_count": 0
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "cloudwatch",
+        "sns"
+      ],
+      "final_services": [
+        "cloudwatch",
+        "sns"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "context.tf",
+      "main.tf",
+      "versions.tf"
+    ],
+    "generated_tfvars": {
+      "alarm": "{}",
+      "dlq_alarm": "{}",
+      "subscription": "{}"
+    },
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 0,
+      "files_modified": 3,
+      "tfvars_generated": 3,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}
