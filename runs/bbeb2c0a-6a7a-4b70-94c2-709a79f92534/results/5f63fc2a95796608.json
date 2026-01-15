@@ -1,0 +1,59 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "bbeb2c0a-6a7a-4b70-94c2-709a79f92534",
+  "status": "FAILED",
+  "started_at": "2026-01-15T12:56:45.268697",
+  "completed_at": "2026-01-15T13:01:55.117559",
+  "duration_seconds": 309.848865,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Terraform timed out"
+  },
+  "pytest_results": null,
+  "container_logs": "58:06.582  INFO --- [et.reactor-8] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:06.585  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:16.600  INFO --- [et.reactor-1] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:16.602  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:26.608  INFO --- [et.reactor-3] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:26.611  INFO --- [et.reactor-5] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:36.626  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:36.630  INFO --- [et.reactor-8] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:46.632  INFO --- [et.reactor-1] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:46.636  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:56.650  INFO --- [et.reactor-3] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:58:56.653  INFO --- [et.reactor-5] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:06.659  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:06.662  INFO --- [et.reactor-8] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:16.677  INFO --- [et.reactor-1] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:16.681  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:26.684  INFO --- [et.reactor-4] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:26.688  INFO --- [et.reactor-3] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:36.695  INFO --- [et.reactor-3] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:36.700  INFO --- [et.reactor-2] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:46.711  INFO --- [et.reactor-8] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:46.714  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:56.728  INFO --- [et.reactor-1] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T12:59:56.732  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:06.747  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:06.749  INFO --- [et.reactor-5] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:16.756  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:16.759  INFO --- [et.reactor-2] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:26.765  INFO --- [et.reactor-7] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:26.768  INFO --- [et.reactor-1] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:36.775  INFO --- [et.reactor-5] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:36.777  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:46.792  INFO --- [et.reactor-2] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:46.795  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:56.810  INFO --- [et.reactor-7] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:00:56.813  INFO --- [et.reactor-1] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:06.828  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:06.830  INFO --- [et.reactor-5] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:16.845  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:16.848  INFO --- [et.reactor-2] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:26.856  INFO --- [et.reactor-7] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:26.861  INFO --- [et.reactor-1] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:36.863  INFO --- [et.reactor-5] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:36.867  INFO --- [et.reactor-6] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:46.878  INFO --- [et.reactor-0] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n2026-01-15T13:01:46.881  INFO --- [et.reactor-2] localstack.request.aws     : AWS ec2.DescribeSubnets => 200\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [],
+      "lambdas": [],
+      "stub_types": {},
+      "directories": [],
+      "has_stubs": false,
+      "stub_count": 0
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "ec2"
+      ],
+      "final_services": [
+        "ec2"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "versions.tf"
+    ],
+    "generated_tfvars": {},
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 0,
+      "files_modified": 1,
+      "tfvars_generated": 0,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}
