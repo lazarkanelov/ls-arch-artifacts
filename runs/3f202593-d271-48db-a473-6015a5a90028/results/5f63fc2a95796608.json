@@ -1,0 +1,17 @@
+{
+  "arch_hash": "5f63fc2a95796608",
+  "run_id": "3f202593-d271-48db-a473-6015a5a90028",
+  "status": "FAILED",
+  "started_at": "2026-01-15T09:11:07.359953",
+  "completed_at": "2026-01-15T09:11:09.682364",
+  "duration_seconds": 2.322414,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Init failed:\nSTDOUT: \n\u001b[0m\u001b[1mInitializing the backend...\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: \u001b[31m\u001b[0mTerraform encountered problems during initialisation, including problems\nwith the configuration, described below.\n\nThe Terraform configuration must be valid before initialization so that\nTerraform can determine which modules and providers need to be installed.\u001b[0m\u001b[0m\n\u001b[31m\u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mArgument or block definition required\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  on versions.tf line 2, in terraform:\n\u001b[31m\u2502\u001b[0m \u001b[0m   2:   \u001b[4mrequired_\u001b[0m# version constraint relaxed for compatibility\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mAn argument or block definition is required here. To set an argument, use\n\u001b[31m\u2502\u001b[0m \u001b[0mthe equals sign \"=\" to introduce the argument value.\n\u001b[31m\u2575\u001b[0m\u001b[0m\n\u001b[0m\u001b[0m\n"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev68\nLocalStack build date: 2026-01-15\nLocalStack build git hash: ccc4a3ec8\n\n2026-01-15T09:11:08.465  WARN --- [  MainThread] localstack.deprecations    : LAMBDA_EXECUTOR is deprecated (since 2.0.0) and will be removed in upcoming releases of LocalStack! This configuration is obsolete with the new lambda provider https://docs.localstack.cloud/user-guide/aws/lambda/#migrating-to-lambda-v2\nPlease mount the Docker socket /var/run/docker.sock as a volume when starting LocalStack.\nReady.\n",
+  "error_message": null
+}
