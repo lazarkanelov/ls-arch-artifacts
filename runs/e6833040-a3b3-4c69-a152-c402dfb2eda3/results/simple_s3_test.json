@@ -1,0 +1,59 @@
+{
+  "arch_hash": "simple_s3_test",
+  "run_id": "e6833040-a3b3-4c69-a152-c402dfb2eda3",
+  "status": "FAILED",
+  "started_at": "2026-01-18T02:26:44.454434",
+  "completed_at": "2026-01-18T02:32:18.401644",
+  "duration_seconds": 333.947213,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Terraform timed out"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev70\nLocalStack build date: 2026-01-16\nLocalStack build git hash: 70326226a\n\n2026-01-18T02:27:11.910  WARN --- [  MainThread] localstack.deprecations    : LAMBDA_EXECUTOR is deprecated (since 2.0.0) and will be removed in upcoming releases of LocalStack! This configuration is obsolete with the new lambda provider https://docs.localstack.cloud/user-guide/aws/lambda/#migrating-to-lambda-v2\nPlease mount the Docker socket /var/run/docker.sock as a volume when starting LocalStack.\nReady.\n2026-01-18T02:27:27.020 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:27.022  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:27.115 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:27.116  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:27.346 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:27.347  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:27.778 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:27.778  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:28.434 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:28.435  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:30.213 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:30.213  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:33.205 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:33.205  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:37.727 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:37.727  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:27:52.797 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:27:52.798  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:28:18.643 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:28:18.643  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:29:14.312 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:29:14.312  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n2026-01-18T02:30:20.170 ERROR --- [et.reactor-0] l.aws.handlers.logging     : exception during call chain: Unable to find operation for request to service s3: HEAD /\n2026-01-18T02:30:20.170  INFO --- [et.reactor-0] localstack.request.http    : HEAD / => 500\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [],
+      "lambdas": [],
+      "stub_types": {},
+      "directories": [],
+      "has_stubs": false,
+      "stub_count": 0
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "s3"
+      ],
+      "final_services": [
+        "s3"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [
+      "main.tf"
+    ],
+    "generated_tfvars": {},
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 0,
+      "files_modified": 1,
+      "tfvars_generated": 0,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}
