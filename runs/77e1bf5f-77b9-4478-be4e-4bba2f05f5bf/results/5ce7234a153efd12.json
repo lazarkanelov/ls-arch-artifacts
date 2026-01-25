@@ -1,0 +1,70 @@
+{
+  "arch_hash": "5ce7234a153efd12",
+  "run_id": "77e1bf5f-77b9-4478-be4e-4bba2f05f5bf",
+  "status": "FAILED",
+  "started_at": "2026-01-25T02:42:35.680607",
+  "completed_at": "2026-01-25T02:42:52.838631",
+  "duration_seconds": 17.158026,
+  "terraform_apply": {
+    "success": false,
+    "resources_created": 0,
+    "outputs": {},
+    "logs": "Apply failed:\nSTDOUT: \u001b[0m\u001b[1mdata.aws_iam_policy_document.lambda_logs_policy_doc: Reading...\u001b[0m\u001b[0m\n\u001b[0m\u001b[1mdata.aws_iam_policy_document.assume_role_policy_doc: Reading...\u001b[0m\u001b[0m\n\u001b[0m\u001b[1mdata.aws_iam_policy_document.assume_role_policy_doc: Read complete after 0s [id=3716027628]\u001b[0m\n\u001b[0m\u001b[1mdata.aws_iam_policy_document.lambda_logs_policy_doc: Read complete after 0s [id=3546645223]\u001b[0m\n\nTerraform used the selected providers to generate the following execution\nplan. Resource actions are indicated with the following symbols:\n  \u001b[32m+\u001b[0m create\u001b[0m\n\nTerraform planned the following actions, but then encountered a problem:\n\n\u001b[1m  # aws_cloudwatch_log_group.log_group\u001b[0m will be created\n\u001b[0m  \u001b[32m+\u001b[0m\u001b[0m resource \"aws_cloudwatch_log_group\" \"log_group\" {\n      \u001b[32m+\u001b[0m\u001b[0m arn                         = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m deletion_protection_enabled = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m id                          = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m log_group_class             = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m name                        = \"/aws/lambda/lsqm-test\"\n      \u001b[32m+\u001b[0m\u001b[0m name_prefix                 = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m region                      = \"us-east-1\"\n      \u001b[32m+\u001b[0m\u001b[0m retention_in_days           = 0\n      \u001b[32m+\u001b[0m\u001b[0m skip_destroy                = false\n      \u001b[32m+\u001b[0m\u001b[0m tags_all                    = (known after apply)\n    }\n\n\u001b[1m  # aws_iam_role.lambda_at_edge\u001b[0m will be created\n\u001b[0m  \u001b[32m+\u001b[0m\u001b[0m resource \"aws_iam_role\" \"lambda_at_edge\" {\n      \u001b[32m+\u001b[0m\u001b[0m arn                   = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m assume_role_policy    = jsonencode(\n            {\n              \u001b[32m+\u001b[0m\u001b[0m Statement = [\n                  \u001b[32m+\u001b[0m\u001b[0m {\n                      \u001b[32m+\u001b[0m\u001b[0m Action    = \"sts:AssumeRole\"\n                      \u001b[32m+\u001b[0m\u001b[0m Effect    = \"Allow\"\n                      \u001b[32m+\u001b[0m\u001b[0m Principal = {\n                          \u001b[32m+\u001b[0m\u001b[0m Service = [\n                              \u001b[32m+\u001b[0m\u001b[0m \"lambda.amazonaws.com\",\n                              \u001b[32m+\u001b[0m\u001b[0m \"edgelambda.amazonaws.com\",\n                            ]\n                        }\n                      \u001b[32m+\u001b[0m\u001b[0m Sid       = \"AllowAwsToAssumeRole\"\n                    },\n                ]\n              \u001b[32m+\u001b[0m\u001b[0m Version   = \"2012-10-17\"\n            }\n        )\n      \u001b[32m+\u001b[0m\u001b[0m create_date           = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m force_detach_policies = false\n      \u001b[32m+\u001b[0m\u001b[0m id                    = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m managed_policy_arns   = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m max_session_duration  = 3600\n      \u001b[32m+\u001b[0m\u001b[0m name                  = \"lsqm-test-role\"\n      \u001b[32m+\u001b[0m\u001b[0m name_prefix           = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m path                  = \"/\"\n      \u001b[32m+\u001b[0m\u001b[0m tags_all              = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m unique_id             = (known after apply)\n    }\n\n\u001b[1m  # aws_iam_role_policy.logs_role_policy\u001b[0m will be created\n\u001b[0m  \u001b[32m+\u001b[0m\u001b[0m resource \"aws_iam_role_policy\" \"logs_role_policy\" {\n      \u001b[32m+\u001b[0m\u001b[0m id          = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m name        = \"lsqm-testat-edge\"\n      \u001b[32m+\u001b[0m\u001b[0m name_prefix = (known after apply)\n      \u001b[32m+\u001b[0m\u001b[0m policy      = jsonencode(\n            {\n              \u001b[32m+\u001b[0m\u001b[0m Statement = [\n                  \u001b[32m+\u001b[0m\u001b[0m {\n                      \u001b[32m+\u001b[0m\u001b[0m Action   = [\n                          \u001b[32m+\u001b[0m\u001b[0m \"logs:PutLogEvents\",\n                          \u001b[32m+\u001b[0m\u001b[0m \"logs:CreateLogStream\",\n                          \u001b[32m+\u001b[0m\u001b[0m \"logs:CreateLogGroup\",\n                        ]\n                      \u001b[32m+\u001b[0m\u001b[0m Effect   = \"Allow\"\n                      \u001b[32m+\u001b[0m\u001b[0m Resource = \"*\"\n                    },\n                ]\n              \u001b[32m+\u001b[0m\u001b[0m Version   = \"2012-10-17\"\n            }\n        )\n      \u001b[32m+\u001b[0m\u001b[0m role        = (known after apply)\n    }\n\n\u001b[1mPlan:\u001b[0m 3 to add, 0 to change, 0 to destroy.\n\u001b[0m\nChanges to Outputs:\n  \u001b[32m+\u001b[0m\u001b[0m execution_role_arn  = (known after apply)\n  \u001b[32m+\u001b[0m\u001b[0m execution_role_name = \"lsqm-test-role\"\n  \u001b[32m+\u001b[0m\u001b[0m function_name       = \"lsqm-test\"\n\u001b[33m\u2577\u001b[0m\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[33mWarning: \u001b[0m\u001b[0m\u001b[1mDeprecated Resource\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\u001b[0m  with aws_s3_bucket_object.artifact,\n\u001b[33m\u2502\u001b[0m \u001b[0m  on main.tf line 43, in resource \"aws_s3_bucket_object\" \"artifact\":\n\u001b[33m\u2502\u001b[0m \u001b[0m  43: resource \"aws_s3_bucket_object\" \"artifact\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0muse the aws_s3_object resource instead\n\u001b[33m\u2575\u001b[0m\u001b[0m\n\u001b[33m\u2577\u001b[0m\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[33mWarning: \u001b[0m\u001b[0m\u001b[1mRedundant ignore_changes element\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\u001b[0m  on main.tf line 54, in resource \"aws_lambda_function\" \"lambda\":\n\u001b[33m\u2502\u001b[0m \u001b[0m  54: resource \u001b[4m\"aws_lambda_function\"\u001b[0m \"lambda\" {\u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0mAdding an attribute name to ignore_changes tells Terraform to ignore future\n\u001b[33m\u2502\u001b[0m \u001b[0mchanges to the argument in configuration after the object has been created,\n\u001b[33m\u2502\u001b[0m \u001b[0mretaining the value originally configured.\n\u001b[33m\u2502\u001b[0m \u001b[0m\n\u001b[33m\u2502\u001b[0m \u001b[0mThe attribute last_modified is decided by the provider alone and therefore\n\u001b[33m\u2502\u001b[0m \u001b[0mthere can be no configured value to compare with. Including this attribute\n\u001b[33m\u2502\u001b[0m \u001b[0min ignore_changes has no effect. Remove the attribute from ignore_changes\n\u001b[33m\u2502\u001b[0m \u001b[0mto quiet this warning.\n\u001b[33m\u2575\u001b[0m\u001b[0m\n::error::Terraform exited with code 1.\n\nSTDERR: \u001b[31m\u2577\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1mMissing Attribute Configuration\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\u001b[0m  with data.archive_file.zip_file_for_lambda,\n\u001b[31m\u2502\u001b[0m \u001b[0m  on main.tf line 9, in data \"archive_file\" \"zip_file_for_lambda\":\n\u001b[31m\u2502\u001b[0m \u001b[0m   9: data \"archive_file\" \"zip_file_for_lambda\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0m\n\u001b[31m\u2502\u001b[0m \u001b[0mAt least one of these attributes must be configured:\n\u001b[31m\u2502\u001b[0m \u001b[0m[source,source_content_filename,source_file,source_dir]\n\u001b[31m\u2575\u001b[0m\u001b[0m\n"
+  },
+  "pytest_results": null,
+  "container_logs": "\nLocalStack version: 4.12.1.dev76\nLocalStack build date: 2026-01-23\nLocalStack build git hash: bdd974ddc\n\n2026-01-25T02:42:37.756  WARN --- [  MainThread] localstack.deprecations    : LAMBDA_EXECUTOR is deprecated (since 2.0.0) and will be removed in upcoming releases of LocalStack! This configuration is obsolete with the new lambda provider https://docs.localstack.cloud/user-guide/aws/lambda/#migrating-to-lambda-v2\nPlease mount the Docker socket /var/run/docker.sock as a volume when starting LocalStack.\nReady.\n",
+  "error_message": null,
+  "preprocessing_delta": {
+    "removed_resources": [],
+    "stub_info": {
+      "files": [],
+      "lambdas": [],
+      "stub_types": {},
+      "directories": [],
+      "has_stubs": false,
+      "stub_count": 0
+    },
+    "service_reconciliation": {
+      "original_services": [
+        "cloudwatch",
+        "iam",
+        "lambda",
+        "s3",
+        "ssm"
+      ],
+      "final_services": [
+        "cloudwatch",
+        "iam",
+        "lambda",
+        "s3",
+        "ssm"
+      ],
+      "removed_services": [],
+      "added_services": [],
+      "warnings": [],
+      "significant_change": false,
+      "change_ratio": 0.0
+    },
+    "modified_files": [],
+    "generated_tfvars": {
+      "name": "\"lsqm-test\"",
+      "description": "\"LSQM test resource\"",
+      "s3_artifact_bucket": "\"lsqm-test-bucket\"",
+      "lambda_code_source_dir": "\".\""
+    },
+    "removed_backends": [],
+    "removed_profiles": [],
+    "provider_version_changes": [],
+    "summary": {
+      "resources_removed": 0,
+      "stubs_created": 0,
+      "files_modified": 0,
+      "tfvars_generated": 4,
+      "backends_removed": 0,
+      "services_removed": 0,
+      "has_significant_service_changes": false
+    }
+  },
+  "resource_inventory": null,
+  "test_quality": null
+}
